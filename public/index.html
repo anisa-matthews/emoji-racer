@@ -2,7 +2,34 @@
     <html>
         <head>
             <title></title>
-            </head>
+            <style type="text/css" media="screen">
+
+                .racer {
+                  position: absolute;
+                  left: 0px;
+                  font-size: 100px;
+                }
+                
+                .player1 {
+                  top: 50px;
+                }    
+                
+                .player2 {
+                  top: 300px
+                }    
+                
+                .play-area {
+                  position: relative;
+                  width: 800px;
+                  height: 500px;
+                  border-right: 3px dashed black;
+                }
+                
+                button {
+                  font-size: 3em;
+                }
+                </style>
+        </head>
         <body>
             <button class="player1Btn">Move Tears of Joy &rarr;</button>
             <div class="play-area">
@@ -11,7 +38,7 @@
             </div>
             <button class="player2Btn">Move Face Screaming &rarr;</button>
 
-            <script src="/socket.io/socket.io.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
             <script src="racer.js"></script>
         </body>
     </html>
