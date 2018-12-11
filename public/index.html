@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
             <title></title>
             <style type="text/css" media="screen">
 
@@ -10,11 +11,11 @@
                   font-size: 100px;
                 }
                 
-                .player1 {
+                #player1 {
                   top: 50px;
                 }    
                 
-                .player2 {
+                #player2 {
                   top: 300px
                 }    
                 
@@ -31,12 +32,12 @@
                 </style>
         </head>
         <body>
-            <button class="player1Btn">Move Tears of Joy &rarr;</button>
+            <button id="player1Btn">Move Tears of Joy &rarr;</button>
             <div class="play-area">
-                <div class="racer player1">&#128514;</div>
-                <div class="racer player2">&#128561;</div>
+                <div class="racer" id="player1">&#128514;</div>
+                <div class="racer" id="player2">&#128561;</div>
             </div>
-            <button class="player2Btn">Move Face Screaming &rarr;</button>
+            <button id="player2Btn">Move Face Screaming &rarr;</button>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
             <script src="racer.js"></script>
